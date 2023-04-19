@@ -1,0 +1,40 @@
+body {
+    background-image: url();
+    background-repeat: repeat-y;
+}
+#top {
+    color: #ffffff;
+    background-color: #66cc33;
+}
+#navi {
+    vertical-align: top;
+    border-right-width: 6px;
+    border-right-style: double;
+    border-right-color: #663300;
+}
+h1 {
+    font-size: 340%;
+    text-align: center;
+}
+h2 {
+    font-size: 200%;
+    text-decoration: underline;
+    color: crimson;
+}
+ol {
+    font-style: italic;
+    font-size: 120%;
+    line-height: 2.5;
+    color: #cc6633;
+}
+ul {
+    font-weight: bold;
+    line-height: 2;
+    background-image: url();
+    list-style-type: square;
+}
+a:hover {
+    position: relative;
+    left: 2px;
+    top: 2px;
+}
