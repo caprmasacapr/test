@@ -1,10 +1,16 @@
 body {
-    background-image: url();
-    background-repeat: repeat-y;
+    background-image: url(back.png);
+    background-repeat: repeat-x;
 }
 #top {
     color: #ffffff;
-    background-color: #66cc33;
+    background-color: #333dcc3d;
+}
+#main {
+    font-size: 200%;
+}
+.miku {
+    text-align: left;
 }
 #navi {
     vertical-align: top;
@@ -12,14 +18,36 @@ body {
     border-right-style: double;
     border-right-color: #663300;
 }
+.masa1 {
+    font-size: 200%;
+    list-style-type: none;
+}
+.cell {
+    width: 250px;
+    height: 50px;
+}
 h1 {
-    font-size: 340%;
+    font-size: 250%;
     text-align: center;
+    font-style: italic;
 }
 h2 {
     font-size: 200%;
     text-decoration: underline;
     color: crimson;
+}
+h3 {
+    font-size: 175%;
+    font-style: italic;
+    color: darkviolet;
+    background-color: antiquewhite;
+    background-image: url(back.png);
+}
+h4 {
+    font-size: 125%;
+    color: #663300;
+    text-align: center;
+    background-image: url(back2.jpg);
 }
 ol {
     font-style: italic;
@@ -29,8 +57,8 @@ ol {
 }
 ul {
     font-weight: bold;
-    line-height: 2;
-    background-image: url();
+    line-height: 1.75;
+    background-image: url(back1.png);
     list-style-type: square;
 }
 a:hover {
