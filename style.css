@@ -1,59 +1,41 @@
 body {
-    background-image: url(back.png);
-    background-repeat: repeat-x;
-}
-#top {
-    color: #ffffff;
-    background-color: #333dcc3d;
-}
-#main {
-    font-size: 200%;
-}
-.miku {
-    text-align: left;
-}
-#navi {
-    vertical-align: top;
-    border-right-width: 6px;
-    border-right-style: double;
-    border-right-color: #663300;
-}
-.masa1 {
-    font-size: 200%;
-    list-style-type: none;
-}
-.cell {
-    width: 250px;
-    height: 50px;
+    background-image: url();
 }
 h1 {
-    font-size: 250%;
+    background-image: url(yukiyama1_m1.jpg);
     text-align: center;
-    font-style: italic;
+    font-size: 60px;
+    font-weight: bold;
+    color: blueviolet;
+    font-family: 'Times New Roman', Times, serif;
 }
-h2 {
-    font-size: 200%;
-    text-decoration: underline;
-    color: crimson;
-}
-h3 {
-    font-size: 175%;
-    font-style: italic;
-    color: darkviolet;
-    background-color: antiquewhite;
-    background-image: url(back.png);
-}
-h4 {
-    font-size: 125%;
-    color: #663300;
+.item01 {
+    background-image: url(back1.png);
+    background-position: left;
     text-align: center;
-    background-image: url(back2.jpg);
-}
-ol {
+    font-size: 25px;
+    font-family: 'Times New Roman', Times, serif;
     font-style: italic;
-    font-size: 120%;
-    line-height: 2.5;
-    color: #cc6633;
+    font-weight: bold;
+}
+.item02 {
+    text-align: center;
+}
+.item11 {
+    text-align: center;
+}
+.item21 {
+    text-align: center;
+}
+.item31 {
+    text-align: center;
+}
+.item41 {
+    text-align: center;
+    background-image: url();
+}
+.item51 {
+    text-align: center;
 }
 ul {
     font-weight: bold;
