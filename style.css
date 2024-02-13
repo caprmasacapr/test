@@ -1,50 +1,454 @@
+
 body {
-    background-image: url();
+    background-image: url(haikei5.jpg);
 }
 h1 {
-    background-image: url(yukiyama1_m1.jpg);
-    text-align: center;
-    font-size: 60px;
-    font-weight: bold;
-    color: blueviolet;
-    font-family: 'Times New Roman', Times, serif;
-}
-.item01 {
-    background-image: url(back1.png);
-    background-position: left;
-    text-align: center;
-    font-size: 25px;
-    font-family: 'Times New Roman', Times, serif;
+    font-size: 300%;
     font-style: italic;
     font-weight: bold;
-}
-.item02 {
+    color: brown;
     text-align: center;
+    border-bottom-width: 7px;
+    border-bottom-style: double;
+    border-bottom-color: black;
+    background-image: url(yukiyama1.jpg);
+    border-top-width: 7px;
+    border-top-style: double;
+    border-top-color: black;
 }
-.item11 {
-    text-align: center;
-}
-.item21 {
-    text-align: center;
-}
-.item31 {
-    text-align: center;
-}
-.item41 {
-    text-align: center;
-    background-image: url();
-}
-.item51 {
-    text-align: center;
+h2 {
+    font-size: 200%;
+    font-style: italic;
+    font-weight: bold;
+    color: blueviolet;
 }
 ul {
     font-weight: bold;
-    line-height: 1.75;
+    font-style: italic;
     background-image: url(back1.png);
-    list-style-type: square;
 }
-a:hover {
-    position: relative;
-    left: 2px;
-    top: 2px;
+#navi {
+    float: left;
 }
+
+
+/*   #####   流れるコメント　　#####  */
+
+div{
+	background:none;
+	width:100%;
+	overflow: hidden;
+  }
+  
+  .text_1{
+	font-size:2em;
+	font-weight: bold;
+	color:darkgreen;
+	animation: flowing 10s linear infinite;
+	transform: translateX(100%);/*初期位置*/
+  }
+  
+  
+  @keyframes flowing {
+	100% {
+	  transform: translateX(-100%);
+	}
+  }
+
+
+
+/*  #####   樫の木   ###  */
+
+
+.container{
+	position: relative;
+	width:75%;
+	height: 500px;
+	background: #000;
+}
+
+.container img{
+	width:100%;
+	height: 100%;
+	object-fit: cover;
+	filter: brightness(0.9);
+}
+
+.texts p{
+	margin: 0;
+	padding: 0;
+	position: absolute;
+	bottom: 5px;
+	left: 50%;
+	transform: translateX(-50%);
+	-webkit-transform: translateX(-50%);
+	text-align: center;
+	color: #FFF;
+	font-size: 10px;
+	word-break: keep-all;
+	opacity: 0;
+}
+
+.texts p:nth-child(1) { animation: text-anim 5s 0s;}
+.texts p:nth-child(2) { animation: text-anim 5s 5s;}
+.texts p:nth-child(3) { animation: text-anim 5s 10s;}
+.texts p:nth-child(4) { animation: text-anim 5s 15s;}
+.texts p:nth-child(5) { animation: text-anim 5s 20s;}
+.texts p:nth-child(6) { animation: text-anim 5s 25s;}
+.texts p:nth-child(7) { animation: text-anim 5s 30s;}
+.texts p:nth-child(8) { animation: text-anim 5s 35s;}
+.texts p:nth-child(9) { animation: text-anim 5s 40s;}
+.texts p:nth-child(10) { animation: text-anim 5s 45s;}
+.texts p:nth-child(11) { animation: text-anim 5s 50s;}
+.texts p:nth-child(12) { animation: text-anim 5s 55s;}
+.texts p:nth-child(13) { animation: text-anim 5s 60s;}
+
+@keyframes text-anim {
+	0%, 100% {opacity: 0;}
+	20%, 80% {opacity: 1;}
+}
+
+/*   #####    雪　　#####     */
+
+.container {
+	position: relative;
+	width: 100%;
+	background: #06061ad5;
+	overflow: hidden;
+	/* for text	 */
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.container img {
+	width: 75%;
+	filter: brightness(0.6);
+}
+
+.snows {
+	position: absolute;
+	width: 100%;
+	height:100%;
+}
+
+.snows span {
+	position: absolute;
+	top: -10%;
+	left: 0;
+	width: 1vw;
+	height: 1vw;
+	background: #FFF;
+	border-radius: 50%;
+	opacity: 0.8;
+	box-shadow: 0 0 1vw 0.5vw rgba(255, 255, 255, 0.4);
+	animation: snow-anim 10s 0s linear infinite;
+}
+
+/* Side position */
+.snows span:nth-child(1) {
+	left: 0%;
+}
+
+.snows span:nth-child(2) {
+	left: 2%;
+}
+
+.snows span:nth-child(3) {
+	left: 4%;
+}
+
+.snows span:nth-child(4) {
+	left: 6%;
+}
+
+.snows span:nth-child(5) {
+	left: 8%;
+}
+
+.snows span:nth-child(6) {
+	left: 10%;
+}
+
+.snows span:nth-child(7) {
+	left: 12%;
+}
+
+.snows span:nth-child(8) {
+	left: 14%;
+}
+
+.snows span:nth-child(9) {
+	left: 16%;
+}
+
+.snows span:nth-child(10) {
+	left: 18%;
+}
+
+.snows span:nth-child(11) {
+	left: 20%;
+}
+
+.snows span:nth-child(12) {
+	left: 22%;
+}
+
+.snows span:nth-child(13) {
+	left: 24%;
+}
+
+.snows span:nth-child(14) {
+	left: 26%;
+}
+
+.snows span:nth-child(15) {
+	left: 28%;
+}
+
+.snows span:nth-child(16) {
+	left: 30%;
+}
+
+.snows span:nth-child(17) {
+	left: 32%;
+}
+
+.snows span:nth-child(18) {
+	left: 34%;
+}
+
+.snows span:nth-child(19) {
+	left: 36%;
+}
+
+.snows span:nth-child(20) {
+	left: 38%;
+}
+
+.snows span:nth-child(21) {
+	left: 40%;
+}
+
+.snows span:nth-child(22) {
+	left: 42%;
+}
+
+.snows span:nth-child(23) {
+	left: 44%;
+}
+
+.snows span:nth-child(24) {
+	left: 46%;
+}
+
+.snows span:nth-child(25) {
+	left: 48%;
+}
+
+.snows span:nth-child(26) {
+	left: 50%;
+}
+
+.snows span:nth-child(27) {
+	left: 52%;
+}
+
+.snows span:nth-child(28) {
+	left: 54%;
+}
+
+.snows span:nth-child(29) {
+	left: 56%;
+}
+
+.snows span:nth-child(30) {
+	left: 58%;
+}
+
+.snows span:nth-child(31) {
+	left: 60%;
+}
+
+.snows span:nth-child(32) {
+	left: 62%;
+}
+
+.snows span:nth-child(33) {
+	left: 64%;
+}
+
+.snows span:nth-child(34) {
+	left: 66%;
+}
+
+.snows span:nth-child(35) {
+	left: 68%;
+}
+
+.snows span:nth-child(36) {
+	left: 70%;
+}
+
+.snows span:nth-child(37) {
+	left: 72%;
+}
+
+.snows span:nth-child(38) {
+	left: 74%;
+}
+
+.snows span:nth-child(39) {
+	left: 76%;
+}
+
+.snows span:nth-child(40) {
+	left: 78%;
+}
+
+.snows span:nth-child(41) {
+	left: 80%;
+}
+
+.snows span:nth-child(42) {
+	left: 82%;
+}
+
+.snows span:nth-child(43) {
+	left: 84%;
+}
+
+.snows span:nth-child(44) {
+	left: 86%;
+}
+
+.snows span:nth-child(45) {
+	left: 88%;
+}
+
+.snows span:nth-child(46) {
+	left: 90%;
+}
+
+.snows span:nth-child(47) {
+	left: 92%;
+}
+
+.snows span:nth-child(48) {
+	left: 94%;
+}
+
+.snows span:nth-child(49) {
+	left: 96%;
+}
+
+.snows span:nth-child(50) {
+	left: 98%;
+}
+
+/* snow size */
+.snows span:nth-child(4n+1) {
+	width: 0.8vw;
+	height: 0.8vw;
+	box-shadow: 0 0 1vw 0.5vw rgba(255, 255, 255, 0.45);
+}
+
+.snows span:nth-child(4n+2) {
+	width: 1vw;
+	height: 1vw;
+	box-shadow: 0 0 1vw 0.7vw rgba(255, 255, 255, 0.4);
+}
+
+.snows span:nth-child(4n+3) {
+	width: 1.1vw;
+	height: 1.1vw;
+	box-shadow: 0 0 1vw 1vw rgba(255, 255, 255, 0.35);
+}
+
+.snows span:nth-child(4n+4) {
+	width: 1.2vw;
+	height: 1.2vw;
+	box-shadow: 0 0 1vw 1.2vw rgba(255, 255, 255, 0.3);
+}
+
+/* animation-duration */
+.snows span:nth-child(6n+1) {
+	animation-duration: 20s;
+}
+
+.snows span:nth-child(6n+2) {
+	animation-duration: 15s;
+}
+
+.snows span:nth-child(6n+3) {
+	animation-duration: 7s;
+}
+
+.snows span:nth-child(6n+4) {
+	animation-duration: 30s;
+}
+
+.snows span:nth-child(6n+5) {
+	animation-duration: 20s;
+}
+
+.snows span:nth-child(6n+6) {
+	animation-duration: 40s;
+}
+
+
+/* animation-delay */
+.snows span:nth-child(5n+1) {
+	animation-delay: 0s;
+}
+
+.snows span:nth-child(5n+2) {
+	animation-delay: 12s;
+}
+
+.snows span:nth-child(5n+3) {
+	animation-delay: 7s;
+}
+
+.snows span:nth-child(5n+4) {
+	animation-delay: 4s;
+}
+
+.snows span:nth-child(5n+5) {
+	animation-delay: 10s;
+}
+
+/* snow animation */
+@keyframes snow-anim {
+	0% {
+		top: -10%;
+		transform: translateX(0);
+	}
+
+	35% {
+		transform: translateX(3vw);
+	}
+
+	65% {
+		transform: translateX(-3vw);
+	}
+
+	100% {
+		top: 100%;
+		transform: translateX(0);
+	}
+}
+
+/* text */
+.container p {
+	position: absolute;
+	padding: 20px;
+	margin: 0;
+	font-size: 40px;
+	font-weight: bold;
+	color: #FFF;
+}
+
+
+
+
