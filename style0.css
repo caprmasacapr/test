@@ -1,0 +1,217 @@
+body {
+    background-image: url(haikei5.jpg);
+}
+h1 {
+    font-size: 300%;
+    font-style: italic;
+    font-weight: bold;
+    color: brown;
+    text-align: center;
+    border-bottom-width: 7px;
+    border-bottom-style: double;
+    border-bottom-color: black;
+    background-image: url(yukiyama1.jpg);
+    border-top-width: 7px;
+    border-top-style: double;
+    border-top-color: black;
+}
+h2 {
+    font-size: 200%;
+    font-style: italic;
+    font-weight: bold;
+    color: blueviolet;
+}
+
+#navi {
+    float: left;
+}
+
+
+/*  ################　地球儀　################################################ */
+
+
+.globe {
+	width: 250px;
+	height: 250px;
+	margin: 30px;
+	border-radius: 50%;
+	position: relative;
+	background: url('https://1-notes.com/wp-content/uploads/2021/06/world-map.png') repeat-x;
+	background-size: auto 100%;
+	animation: rotate-anim 50s linear infinite;
+	box-shadow: -20px -10px 40px rgba(0, 0, 0, .75) inset;
+}
+
+.globe:after {
+	content: "";
+	position: absolute;
+	left: 0;
+	right: 0;
+	bottom: -20px;
+	margin: auto;
+	width: 180px;
+	height: 8px;
+	border-radius: 50%;
+	background: #000;
+	filter: blur(4px);
+}
+
+@keyframes rotate-anim {
+	100% {
+		background-position: -200% 0;
+	}
+}
+
+body {
+    padding: 0;
+    margin: 0;
+  }
+  
+  .link {
+    padding: 0 10px;
+  }
+
+/*  ======================================================================= */
+
+/* =====~=====  globe1  ===-===*/
+
+.globe1 {
+	width: 250px;
+	height: 250px;
+	margin: 30px;
+	border-radius: 50%;
+	position: relative;
+	background: url('https://1-notes.com/wp-content/uploads/2021/06/world-map.png') repeat-y;
+	background-size: auto 100%;
+	animation: rotate-anim 50s linear infinite;
+	box-shadow: -20px -10px 40px rgba(0, 0, 0, .75) inset;
+}
+
+.globe1:after {
+	content: "";
+	position: absolute;
+	left: 0;
+	right: 0;
+	bottom: -20px;
+	margin: auto;
+	width: 180px;
+	height: 8px;
+	border-radius: 50%;
+	background: #000;
+	filter: blur(4px);
+}
+
+/* =======  globe2  ==========*/
+
+.globe2 {
+	width: 250px;
+	height: 250px;
+	margin: 30px;
+	border-radius: 50%;
+	position: relative;
+	background: url('https://1-notes.com/wp-content/uploads/2021/06/world-map.png') repeat-x;
+	background-size: auto 100%;
+	animation: rotate-anim 10s linear infinite;
+	box-shadow: -20px -10px 40px rgba(0, 0, 0, .75) inset;
+}
+
+.globe2:after {
+	content: "";
+	position: absolute;
+	left: 0;
+	right: 0;
+	bottom: -20px;
+	margin: auto;
+	width: 180px;
+	height: 8px;
+	border-radius: 50%;
+	background: #000;
+	filter: blur(4px);
+}
+
+
+/*  ======  globe3  =====*/
+
+.globe3 {
+	width: 250px;
+	height: 250px;
+	margin: 30px;
+	border-radius: 50%;
+	position: relative;
+	background: url('china24.jpg') repeat-x; url('china24.jpg');
+	background-size: auto 100%;
+	animation: rotate-anim 20s linear infinite;
+	box-shadow: -20px -10px 40px rgba(0, 0, 0, .75) inset;
+}
+
+.globe3:after {
+	content: "";
+	position: absolute;
+	left: 0;
+	right: 0;
+	bottom: -20px;
+	margin: auto;
+	width: 180px;
+	height: 8px;
+	border-radius: 50%;
+	background: #000;
+	filter: blur(4px);
+}
+
+
+
+
+/* =========================================================== */
+
+
+@keyframes rotate-anim {
+	100% {
+		background-position: -200% 0;
+	}
+}
+
+body {
+    padding: 0;
+    margin: 0;
+  }
+  
+  .link {
+    padding: 0 10px;
+  }
+
+
+
+
+
+/*  ##############　マウスホバー　下線伸びる　######################################## */
+
+
+ul {
+	display: flex;
+	list-style: none;
+	padding-left: 0;
+	text-align: center;
+	font-weight: bold;
+	font-size: 25px;
+	color: #4169e1;
+}
+
+li {
+	position: relative;
+	flex-grow: 1;
+}
+
+li::before {
+	content: '';
+	position: absolute;
+	left: 50%;
+	bottom: -5px;
+	width: 0;
+	border-bottom: solid 2px #4169e1;
+	transform: translateX(-50%);
+	transition: 0.3s;
+}
+
+li:hover::before {
+	width: 75%;
+}
